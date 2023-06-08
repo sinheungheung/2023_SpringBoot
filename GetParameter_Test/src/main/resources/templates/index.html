@@ -5,8 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<a th:href="@{login}">login</a><br/>
-
-<a th:href="@{Join Us}">Join Us</a>
+<h1 th:text=" 'Model and View' "></h1>
+<a th:href="@{test1}">test1</a>
+<a th:href="@{test2?data1=100&data2=200}">test2</a>
+<a th:href="@{test3/300/400}">test3</a>
+<a th:href="@{test4?data1=500&data2=600}">test4</a>
 </body>
 </html>
