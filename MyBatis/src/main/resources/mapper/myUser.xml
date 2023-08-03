@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.orag//DTDMapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.hs.study.MyBatis.mapper.myUserMapper">
+    <insert id="insert" parameterType="kr.hs.study.MyBatis.dto.myUserDTO">
+    insert into myUser(id, name) values(#{id}, #{name})
+    </insert>
+</mapper>
