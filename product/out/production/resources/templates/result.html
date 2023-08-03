@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>상품수정</h1>
+<form method="post" action="/update_done" th:object="${dto}">
+    상품 아이디<input type="text" name="product_id" th:field="*{product_id}"><br/>
+    상품 이름<input type="text" name="product_name" th:field="*{product_name}"><br/>
+    <button type="submit">수정완료</button>
+</form>
+
+</form>
+
+</form>
+</body>
+</html>
+
+
+
+
