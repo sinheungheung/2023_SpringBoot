@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>유저 목록</h1>
+<table border>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>수정 및 삭제</td>
+    </tr>
+    <tr th:each="user:${list}">
+        <td>
+            <span th:text="${user.id}"/>
+        </td>
+        <td>
+            <span th:text="${user.name}"/>
+        </td>
+        <td><a th:href="@{'update/'+${user.id}}">수정</a> <a th:href="@{'delete/'+${user.id}}">삭제</a></td>
+    </tr>
+</table>
+<a th:href="@{write}">사용자 등록</a>
+</body>
+</html>

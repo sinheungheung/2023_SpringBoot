@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.hs.study.MyBatis.mapper.myUserMapper">
+    <insert id="insert" parameterType="kr.hs.study.MyBatis.dto.myUserDTO">
+        insert into myUser(id, name) values(#{id},#{name})
+    </insert>
+    <select id="list" resultType="kr.hs.study.MyBatis.dto.myUserDTO">
+         select * from myuser order by id
+    </select>
+</mapper>
